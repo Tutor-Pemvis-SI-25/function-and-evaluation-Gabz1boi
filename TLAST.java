@@ -2,7 +2,7 @@
 import java.util.*;
 import java.lang.Math;
 
-public class javapublication {
+public class TLAST {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -147,7 +147,16 @@ public class javapublication {
         }
     }
     
-   
+    public static void updatetaskstatus(String[] kodematkul, String[] status, int n) {
+        String kodenya, setatus;
+        int h;
+
+        kodenya = input.nextLine();
+        for (h = 0; h <= n - 1; h++) {
+            if (kodenya.equals(kodematkul[h])) {
+                setatus = input.nextLine();
+                status[h] = setatus;
+            }
         }
     }
     
